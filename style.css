@@ -1,13 +1,26 @@
+/* Style Variables */
+
+:root {
+    --primary-bg: #f4f4f4;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
 /* Overall Style */
 
 body {
-    background-color: #f8f8f8;
+    background: var(--primary-bg);
     font-family: 'Inter', sans-serif;
     margin: 0;
     pad: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* Navbar */
@@ -15,10 +28,9 @@ body {
 .navbar {
     background-color: #ffffff;
     padding: 10px 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--card-shadow);
 }
 
 .navbar ul {
@@ -53,7 +65,7 @@ body {
     padding: 20px;
     background: white;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--card-shadow);
     margin-top: 1rem;
 }
 
@@ -118,4 +130,25 @@ a:hover {
     margin-top: 20px;
     font-style: italic;
     color: #555;
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--card-shadow);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
