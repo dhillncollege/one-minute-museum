@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Funny Quotes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <meta name="description" content="One minute Museum">
+        <meta name="author" content="David Hill">
+    </head>
+    <body>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+                <li><a href="games.html" class="active">Tiny Games</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1>👾 Pong</h1>
+            <button id="startBtn" class="button">Start Game</button>
+            <button id="stopBtn" class="button" style="display: none;">Stop Game</button>
+            <canvas id="pong" width="600" height="400"></canvas>
+        </div>
+
+        <script src="../game.js"></script>
+    </body>
+</html>
