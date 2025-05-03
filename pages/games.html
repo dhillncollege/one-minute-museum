@@ -9,31 +9,41 @@
         <meta name="author" content="David Hill">
     </head>
     <body>
+
+        <div id="modalBackground">
+            <div id="modalBox">
+                <h2>DISCLAIMER!! :</h2>
+                <p>I did not code pong, I do not have the skills for it. I only did the surrounding CSS elements of the page. <br><br>Thankyou and please enjoy!</p>
+                <button id="okButton" class="button">OK</button>
+            </div>
+        </div>
         
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="quotes.html">Quotes</a></li>
-                <li><a href="games.html" class="active">Tiny Games</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <div id="content-blur">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="quotes.html">Quotes</a></li>
+                    <li><a href="games.html" class="active">Tiny Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
 
-        <div class="container">
-            <h1>👾 Pong</h1>
-            <button id="startBtn" class="button">Start Game</button>
-            <button id="stopBtn" class="button" style="display: none;">Stop Game</button>
-            <canvas id="pong" width="600" height="400"></canvas>
+            <div class="container">
+                <h1>👾 Pong</h1>
+                <button id="startBtn" class="button">Start Game</button>
+                <button id="stopBtn" class="button" style="display: none;">Stop Game</button>
+                <canvas id="pong" width="600" height="400"></canvas>
             
-            <label for="difficulty" class="label">Select Difficulty:</label>
-            <select id="difficulty" class="drop-down">
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
-            </select>
+                <label for="difficulty" class="label">Select Difficulty:</label>
+                <select id="difficulty" class="drop-down">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
 
-            <button id="resetBtn" class="button">Reset Game</button>
+                <button id="resetBtn" class="button">Reset Game</button>
+            </div>
         </div>
 
         <script src="../game.js"></script>

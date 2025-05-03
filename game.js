@@ -1,4 +1,18 @@
 window.onload = function () {
+    var modal = document.getElementById('modalBackground');
+    var okButton = document.getElementById('okButton');
+    var body = document.getElementById('content-blur')
+
+    // Show the modal and apply blur affect
+    modal.style.display = 'flex';
+    body.classList.add('blurred');
+
+    // close modal when 'ok' is pressed
+    okButton.onclick = function() {
+        modal.style.display = 'none';
+        body.classList.remove('blurred');
+    }
+};
 
 const canvas = document.getElementById("pong");
 const ctx = canvas.getContext("2d");
@@ -196,5 +210,3 @@ document.getElementById("difficulty").addEventListener("change", function (e) {
     difficulty = e.target.value;
     resetGame(); // Optional: apply new difficulty immediately
 });
-
-};

@@ -16,6 +16,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    transition: all 0.3s ease;
 }
 
 h1 {
@@ -222,3 +223,40 @@ canvas {
         transform: scale(0.98);
         box-shadow: 0 7px 5px var(--card-shadow);
     }
+
+/* Modal stuff */
+
+#modalBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#modalBox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+    text-align: center;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.blurred {
+    filter: blur(5px);
+}
+
+#content-blur {
+    transition: all 0.3s ease;
+}
